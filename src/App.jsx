@@ -60,7 +60,7 @@ class App extends React.Component {
   }
 
   onDetect = () => {
-    fetch("http://localhost:3000/ApiCall",{
+    fetch("https://image-detection-backend.onrender.com/ApiCall",{
       method:"post",
       headers:{"Content-Type":"application/json"},
       body :JSON.stringify({
@@ -68,7 +68,7 @@ class App extends React.Component {
       })
     }).then(response => response.json())
       .then(result => {
-        fetch("http://localhost:3000/images",{
+        fetch("https://image-detection-backend.onrender.com/images",{
             method:"put",
             headers:{"Content-Type":"application/json"},
             body :JSON.stringify({

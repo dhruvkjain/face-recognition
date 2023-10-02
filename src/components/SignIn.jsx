@@ -30,7 +30,7 @@ class SignIn extends React.Component{
     }
 
     onSubmitSignIn=()=>{
-        fetch("http://localhost:3000/signin",{
+        fetch("https://image-detection-backend.onrender.com/signin",{
             method:"post",
             headers:{"Content-Type":"application/json"},
             body :JSON.stringify({
@@ -48,7 +48,7 @@ class SignIn extends React.Component{
     }
 
     onSubmitRegister=()=>{
-        fetch("http://localhost:3000/register",{
+        fetch("https://image-detection-backend.onrender.com/register",{
             method:"post",
             headers:{"Content-Type":"application/json"},
             body :JSON.stringify({
