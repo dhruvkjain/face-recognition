@@ -100,6 +100,9 @@ class App extends React.Component {
       })
       .catch(error => {
         this.setState({bounding_box:"error"});
+    })
+    .catch(error => {
+      console.log("ApiCall Error");
     });
   }
 
